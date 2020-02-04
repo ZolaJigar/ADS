@@ -1,0 +1,29 @@
+G = {"A":["c"],
+     "B":["c","e"],
+     "C":["a","b","d","e"],
+     "D":["c"],
+     "E":["b","c"],
+     "F":[]}
+
+Edge =[]
+for i in G.values():
+    for j in i:
+        if not(j in Edge):
+            Edge.append(j)
+
+
+    
+    
+for i in G:
+    for j in G[i]:
+        print(i,j)
+
+print("total egdes :",len(Edge))
+
+        
+for i in G:
+    if (G[i] == []):
+        print(i,"is isolated vertex in graph")
+
+        
+
