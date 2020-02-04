@@ -1,0 +1,43 @@
+a=[38,27,43,3,9,82,10]
+def mergesort(x):
+    start=0
+    end=len(a)
+    m=(start+end)//2
+    print (x)
+    left=a[:m+1]
+    right=a[m+1:]
+    print(left)
+    print(right)
+
+mergesort(a)
+
+
+
+
+
+
+
+
+
+
+'''
+l=len(x)/2
+    arr=[ ]
+    m=l/2
+    while( l > 1):
+     while True:
+       arr=[ ]
+        
+    if (start < end):
+        
+        left=a[:round(m)]
+        right=a[round(m)]
+        mergesort(left)
+        mergesort(right)
+        print(right)
+        print(left)
+print(a)
+
+mergesort(a)
+
+'''
