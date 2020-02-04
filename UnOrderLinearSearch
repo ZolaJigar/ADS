@@ -1,0 +1,19 @@
+a=[10, 5, 13, 20, 3, 34, 56, 65]
+b=20
+
+def linearsearch(list, value):
+    for j in range(len(list)):
+        if(list[j] == value):
+            return j
+            break
+    else:
+        return -1
+
+i=linearsearch(a,b)
+                   
+if(i==-1):
+    print(b,"Your Searching Element Is Not There")
+else:
+    print(b,"Your Searching Element Is There And index Number Is :",i)
+
+
