@@ -1,0 +1,12 @@
+a=[5,2,8,1,6]
+l=len(a)
+c=0
+for i in range(c,l):
+    min=i
+    for j in range(c+1,l):
+        if(a[min]>a[j]):
+            min=j
+    a[min],a[i]=a[i],a[min]
+    c+=1
+
+print(a)
