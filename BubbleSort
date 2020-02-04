@@ -1,0 +1,8 @@
+a=[5,12,8,7,3]
+for i in range (len(a)):
+    for k in range (len(a)-1):
+        if a[k] > a[k+1]:
+            temp = a[k]
+            a[k] = a[k+1]
+            a[k+1] = temp
+           
