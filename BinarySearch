@@ -1,0 +1,19 @@
+a=[10, 12, 17, 25, 27, 30]
+
+def BinarySearch(x,value):
+    min = 0
+    max = len(x) - 1
+
+    while(min <= max):
+        mid = (min + max) // 2
+        if (x[mid] == value):
+            print(value, "is there in your list")
+            break
+        elif(value < x[mid]):
+            max = mid-1
+        elif(value > x[mid]):
+            min = mid+1
+    else:
+        print(value,"is not there in your list")
+
+BinarySearch(a, 17)
