@@ -1,0 +1,16 @@
+a = [4, 10, 3, 5, 1]
+l=[ ]
+m = max(a[1], m[2])
+M=a.index(m)
+if(a[0] < m ):
+    a[0], a[M]=a[M], a[0]
+
+m1 = max(a[3],a[4])
+M1 = a.index(M1)
+if(a[1] < M1):
+    a[1], a[M1]=a[M1], a[1]
+
+l.insert(-1, a[0])
+a[0] = a[-1]
+
+del(a[-1])
