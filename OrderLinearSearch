@@ -1,0 +1,22 @@
+a=[10, 15, 27, 35, 40, 42]
+b=5
+
+def orderedls(list, value):
+    list.sort()
+    for j in range(len(list)):
+        if(list[j] == value):
+            return j
+            break
+        elif(value < list[j]):
+            return -1
+            break
+    else:
+        return -1
+            
+i=orderedls(a,b)
+                   
+if(i==-1):
+    print(b,"Your Searching Element Is Not There")
+else:
+    print(b,"Your Searching Element Is There",i)
+
